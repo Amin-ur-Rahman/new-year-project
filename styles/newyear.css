@@ -1,6 +1,212 @@
-
-div{
-    background-color: aqua;
-    width: 400px;
-    padding: 20px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+.roboto-slab-font {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.main-div {
+  max-width: 80vw;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* ------------styling top background-------------- */
+
+.top-bg{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 50px auto;
+
+}
+.top-bg-img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    height: auto;
+    
+}
+
+.new-year-text-block{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    z-index: 1;
+}
+.wish-text{
+    color: rgb(229, 218, 218);
+    font-size: 2rem;
+}
+.new-year-celebration{
+    color: white;
+    font-size: 4rem;
+}
+.top-bg-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.75) 0%, 
+        rgba(0, 0, 0, 0.75) 25%, 
+        rgba(0, 0, 0, 0.4) 50%, 
+        rgba(0, 0, 0, 0.2) 65%, 
+
+        transparent
+        /* rgba(0, 0, 0, 0.5) 40%,
+        rgba(0, 0, 0, 0.4) 55%,
+        rgba(0, 0, 0, 0.3) 65%,
+        rgba(0, 0, 0, 0.1) 100%, */
+
+    );
+   z-index: 1;
+}
+
+/* ------------second section------------ */
+
+.discount-section{
+    width: 70%;
+    margin: 100px auto;
+
+}
+.discount-section .new-year-wish-img{
+    margin: 30px auto;
+}
+.discount-text{
+    text-align: center;
+
+}
+.discount{
+    font-size: 4rem;
+    color: red;
+    margin: 30px auto;
+}
+.promo-1{
+    color: red;
+    font-size: 20px;
+}
+.promo-1, .promo-2{
+    margin: 10px auto;
+}
+
+
+
+
+
+.party-bg{
+    position: relative;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 100px auto;
+
+}
+.party-img{
+    display: block;
+    width: 100%;
+   
+}
+.party-img-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.9), transparent
+    );
+    z-index: 1;
+}
+.party-block{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    z-index: 1;
+    display: flex;
+    margin: 100px 150px;
+    gap: 100px;
+    align-items: center;
+}
+.party-greeting{
+    font-size: 4rem;
+}
+.party-text{
+    color: rgb(241, 232, 232);
+}
+.join-now{
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.party-text-block{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 40px;
+}
+
+/* ---------------3rd section-------------- */
+.location-time-container{
+
+    width: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 230, 230, 1), transparent
+    );
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    
+}
+.location-time{
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  margin: 100px auto;
+}
+
+.rem-2{
+    font-size: 2rem;
+}
+.red{
+    color: red;
+}
+
+.bold{
+    font-weight: 600;
+}
+.join-now-btn{
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+
+
